@@ -1,0 +1,73 @@
+#CH6
+ch6 print.sh
+#!/bin/bash
+echo Hello World
+
+ch6 arg.sh
+#!/bin/bash
+echo $2
+
+ch6 args.sh
+#!/bin/bash
+echo $@
+
+ch6 add.sh
+#!/bin/bash
+sd=17
+sum= $(( $1 + $sd))
+echo $sum
+
+ch6 numargs.sh
+#!/bin/bash
+echo $#
+
+ch6 stderr.sh
+#!/bin/bash
+echo $* 1>&2
+
+ch6 lsstderr.sh
+#!/bin/bash
+ls $1 > &2
+
+ch6 wcscript.sh
+#!/bin/bash
+cat $1 | wc –w
+
+ch6 checknumargs.sh
+#!/bin/bash
+if [ $# != 3 ]
+then
+echo error 1>&2
+else
+echo $*
+fi
+
+#CH7
+
+ch705
+grep -l "Anne" /usr/local/linuxgym-data/gutenberg/* > anne-files.txtss
+
+ch706
+grep -w "Anne" /usr/local/linuxgym-data/gutenberg/12frd10.txt > anne-words.txt
+
+ch707
+grep ^[MN]AT /usr/local/linuxgym-data/census/femalenames.txt > natmat.txt
+
+ch708
+#!/bin/bash
+grep -w $1 ./table.csv | cut -f2 -d,
+
+ch709
+#!/bin/bash
+grep -q $1 ./table.csv
+if [ $? = 0 ]
+then
+echo female
+else
+echo male
+fi
+
+ch710
+#!/bin/bash
+a=`grep -w $1 ./table.csv | cut -f2 -d,`
+grep -w $a ./table.csv | cut -f1 -d, | sort
