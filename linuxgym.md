@@ -1,6 +1,6 @@
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F1MSEZ%2FRandom.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2F1MSEZ%2FRandom?ref=badge_shield)
 
-#CH2
+# CH2
 ch2 insert
 mkdir ch2-vim
 Cd mkdir ch2-vim
@@ -55,7 +55,7 @@ P – paste
 
 mw d'w p
 
-#CH3
+# CH3
 ch3 whoami
 whoami > myuserid
 
@@ -67,7 +67,7 @@ cat > stderr.out
 cat forgotten.txt 2> stderr.out
 
 
-#CH5
+# CH5
 ch5 count.txt
 wc -w /usr/local/linuxgym-data/gutenberg/0ws0310.txt > count.txt
 
@@ -94,7 +94,7 @@ touch large_to_small
 cd /usr/local/linuxgym-data/gutenberg
 ls –S > ~/ch5-pipewild/large_to_small
 
-#CH6
+# CH6
 ch6 print.sh
 #!/bin/bash
 echo Hello World
@@ -138,7 +138,7 @@ else
 echo $*
 fi
 
-#CH7
+# CH7
 
 ch705
 grep -l "Anne" /usr/local/linuxgym-data/gutenberg/* > anne-files.txtss
