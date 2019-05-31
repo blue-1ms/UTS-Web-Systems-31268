@@ -1,0 +1,112 @@
+* {
+  font-family: "Trebuchet MS";
+  box-sizing: border-box;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-radius: 5%;
+  padding-bottom: 20px;
+}
+
+body {
+  background-image: url(background.jpg)
+}
+
+#content {
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: auto;
+}
+
+h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.top {
+  font-size: 50px;
+  color: black;
+  text-shadow: 3px 2px yellow;
+  text-align: center;
+  background-image: url(navbg.png)
+}
+
+.info {
+  padding: 2px;
+  text-align: center;
+  color: black;
+  background-color: yellow;
+}
+
+.header {
+  margin-top: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  color: black;
+  background-color: yellow;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 15px;
+}
+
+.nav a:hover {
+  background-color: yellow;
+}
+
+.active {
+  color: red;
+  background: yellow;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: yellow;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  color: black;
+  font-size: 12pt;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+td, th {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+tr:nth-child(odd) {
+  background-color: yellow;
+}
