@@ -4,5 +4,6 @@
 ##Essential Tools
 
 *[Visual Studio Code](https://code.visualstudio.com/)
+*[VMWare_WorkStaion or VMWare_Fusion](https://www.vmware.com/au/products/workstation-pro.html)
 
 
